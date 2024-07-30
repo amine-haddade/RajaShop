@@ -1,0 +1,685 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-weight: 200;
+    /* font-family: 'Archivo', sans-serif; */
+    font-family: sans-serif;
+}
+.homme1{
+    width: 100%;
+    height: 100vh;
+}
+.homme1 header{
+    width: 100%;
+    height: 5%;
+    background-color:#0e4429;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 2.5%;
+    color: white;
+}
+.homme1 header .icone{
+    width: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.homme1 header .aider{
+    width: 4%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 900;
+    cursor: pointer;
+
+}
+
+/* *****************************NAV MENU**************************** */
+nav{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    box-shadow: 2px 2px 10px black;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0px 5%;
+    align-items: center;
+    z-index: 100;
+    position:sticky;
+    top: 0;
+}
+nav ul{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:21px;
+    font-weight:500;
+    list-style: none;
+}
+nav ul li{
+    list-style-type: none;
+    transition: 0.4s;
+    transition-timing-function: 0.4s;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+    color:#0e4429;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    
+}
+nav .icones{
+    width: 10%;
+    display: flex;
+    height: 50%;
+    align-items: center;
+    justify-content:space-between;
+    color: white;
+    font-size: 18px;
+}
+nav .icones .icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:#0e4429;
+    cursor: pointer;
+}
+/* les tenus de match */
+ul li ul.lestenues{
+    display: none;
+    position: absolute;
+    width: 130px;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;    
+    height: 170px;
+    background-color: rgb(255, 255, 255);
+}
+ul li ul.lestenues li a{
+    font-size: 20px;
+    font-weight: 200;
+}
+ul li:hover ul.lestenues{
+    display: block;
+    animation-name: tenu;
+    overflow: hidden;
+    animation-duration: 0.7s;
+    line-height: calc(160px/3);
+    padding-left: 10px;
+    padding-top: 12px;
+    
+}
+@keyframes tenu{
+    0%{height: 0px;}
+    100%{height: 170px;}
+}
+#entrainement{
+    height: 100px;
+}
+ul li:hover #entrainement{
+    animation-name: entrainement;
+    line-height: 40px;
+    animation-duration: 0.6s;
+}
+@keyframes entrainement{
+    0%{height: 0px;}
+    100%{height: 100px;}
+}
+#mode{
+    height: 310px;
+}
+ul li:hover #mode{
+    animation-name: mode;
+    line-height: 50px;
+    animation-duration: 0.6s;
+}
+@keyframes mode{
+    0%{height: 0px;}
+    100%{height: 310px;}
+}
+#cadeaux{
+    height: 170px;
+}
+ul li:hover #cadeaux{
+    animation-name: cadeaux;
+    line-height: 37px;
+    width: 120px;
+    animation-duration: 0.5s;
+}
+@keyframes cadeaux{
+    0%{height: 0px;}
+    100%{height: 170px;}
+}
+/* .homme1 .image{
+    width: 100%;
+    height: 82.5vh;
+}
+.homme1 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+.container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style:none ;
+    scrollbar-width:none ;
+}
+.container .image{
+    min-width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* <!-- **********************************best_seller***************************** --> */
+.best_saller{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0px;
+}
+.best_saller h1{
+    font-size: 35px;
+    text-align: center;
+    color: #0e4429;
+    font-weight: 400;
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Livvic', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.best_saller h4{
+    font-size: 17px;
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Livvic', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #676767;
+    margin-bottom: 10px;
+}
+.best_saller .card{
+    gap: 60px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    padding:0px 2%;
+    overflow-x: auto;
+    cursor: pointer;
+    -ms-overflow-style:none ;
+    scrollbar-width:none ;
+}
+.best_saller .card .group{
+    height: 100%;
+    min-width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+}
+.best_saller .card .group .cards{
+    height: 85%;
+    border: 1px solid rgb(217 217 217);
+    cursor: pointer;
+}
+.best_saller .card .group .cards .image{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    top: 0;
+    left: 0;
+}
+.best_saller .card .group .cards .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.best_saller .card .group .cards .info{
+    padding: 10px 15px;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.best_saller .card .group .cards .info h1{
+    font-size: 25px;
+    font-weight: 300;
+    color: #676767;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+}
+.best_saller .card .group .cards .info p{
+    font-size: 18px;
+    font-weight: 200;
+    color: rgb(41, 41, 41);
+
+}
+.best_saller .card .group .cards .info h4{
+    color: #02934a;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
+    display: inline-block;
+    margin-right: 8px;
+    
+}
+.best_saller .card .group .cards .info h5{
+    color: #02934a;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 400;
+    display: inline-block;
+}
+
+/* <!-- *********************************image_salid_homme************************************ --> */
+
+.image_salid_homme{
+    width: 100%;
+    margin-top: 45px;
+}
+.image_salid_homme img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* <!-- ****************************************product*************************************************** --> */
+
+.prudact_homme_page{
+    width: 100%;
+    height: 205vh;
+    margin-top: 30px;
+    padding: 0px 3%;
+}
+.prudact_homme_page .titre{
+    width: 100%;
+    height: 7%;
+    text-align: center;
+}
+.prudact_homme_page .titre h1{
+    color: #0e4429;
+    font-size:30px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+.prudact_homme_page .titre h6{
+    color: #676767;
+    font-size: 18px;
+    font-weight: 700;
+}
+.prudact_homme_page .prodact{
+    width: 100%;
+    height: 92%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 30px;
+    column-gap: 110px;
+}
+.prudact_homme_page .prodact .produit{
+        border: 1px solid rgb(217 217 217);
+        cursor: pointer;
+
+}
+.prudact_homme_page .prodact .produit .image{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    top: 0;
+    left: 0;
+}
+.prudact_homme_page .prodact .produit .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.prudact_homme_page .prodact .produit .info{
+    padding: 20px 15px;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.prudact_homme_page .prodact .produit .info h1{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: #676767;
+    text-transform: uppercase;
+    font-family:  sans-serif;
+    text-align: left;
+}
+.prudact_homme_page .prodact .produit .info p{
+    font-size: 18px;
+    font-weight: 200;
+    color: rgb(41, 41, 41);
+
+}
+.prudact_homme_page .prodact .produit .info h4{
+    color: #11ad5f;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
+    display: inline-block;
+    margin-right: 8px;
+    
+}
+.prudact_homme_page .prodact .produit .info h5{
+    color: #11ad5f;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 400;
+    display: inline-block;
+}
+.botona-stor{
+    width: 100%;
+    height: 80px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.botona-stor .botona{
+    width: 14%;
+    height: 60%;
+    color: #0e4429;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 12px;
+    transition: 0.4s;
+}
+.botona-stor .botona:hover{
+    background-color: #02934a;
+    color: white;
+    border: none;
+}
+.botona-stor .botona:hover i{
+    display: none;
+}
+
+/* ******************************section type de tenu******************* */
+.type{
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    margin: 50px 0px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.type .tenu{
+    background-color: black;
+}
+.type .tenu .image{
+    width: 100%;
+    height: 100%;
+}
+.type .tenu .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.type .tenu .buut{
+    width: 140px;
+    height: 50px;
+    background-color: #0e4429;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0px 25px;
+    z-index: 100;
+    position: relative;
+    bottom: 92%;
+    left: 290px;
+    font-size: 16px;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+    
+}
+.type .tenu .buut:hover{
+    background-color: white;
+}
+.type .tenu .buut:hover a{
+    color: #0e4429;
+}
+.type .tenu .buut:hover i{
+    display: none;
+}
+.type .tenu .buut a{
+    color: white;
+    transition: 0.3s;
+    position: relative;
+    margin-right: 7px;
+    text-decoration: none;
+}
+
+.type .tenu .buut i{
+     transition:0s;
+}
+ /* *****************************footer****************************** --> */
+footer{
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    color: white;
+
+}
+footer .fot1{
+    width: 100%;
+    height: 60%;
+    display: grid;
+    padding: 30px 0px 0px 0px;
+    border-bottom:0.1px solid white;
+    grid-template-columns: 1.6fr 1fr 1.3fr 1fr 1.6fr;
+}
+.fot1 .salide1{
+    height: 60%;
+    width: 90%;
+}
+.fot1 .salide1 .logo{
+    margin-bottom: 20px;
+}
+footer .icone{
+    width: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+footer .fot1 .salide2{
+    height: 80%;
+}
+footer .fot1 .salide2 h4{
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+footer .fot1 .salide2 h4::before{
+    content: "";
+    width: 20%;
+    left: 0;
+    position: absolute;
+    bottom: -5px;
+    height: 1px;
+    z-index: 100000;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+footer .fot1 .salide2 ul{
+    display:flex;
+    justify-content: space-between;
+    height: 85%;
+    flex-direction: column;
+}
+footer .fot1 .salide2 ul li{
+    list-style-type: none;
+}
+footer .fot1 .salide2 ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight:lighter;
+    color: white;
+}
+footer .fot1 .salide3{
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+footer .fot1 .salide3 h4{
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    position: relative;
+}
+footer .fot1 .salide3 h4::before{
+    content: "";
+    width: 20%;
+    left: 0;
+    position: absolute;
+    bottom: -5px;
+    height: 1px;
+    z-index: 100000;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+footer .fot1 .salide3 p{
+
+    font-size: 14px;
+    font-weight:lighter;
+    color: white;
+}
+footer .fot1 .salide3 .icone{
+    display:flex ;
+    width: 25%;
+    font-weight: 100;
+    font-size: 18px;
+}
+/*foot2*/
+footer .fot2{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:0.1px solid white;
+}
+footer .fot2 .salide1{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+
+}
+footer .fot2 .salide1 h4{
+    font-size: 18px;
+    font-family:sans-serif;
+    position: relative;
+}
+footer .fot2 .salide1 h4::before{
+    content: "";
+    width: 30%;
+    left: 0;
+    position: absolute;
+    bottom: -20px;
+    height: 1px;
+    z-index: 100000;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+footer .fot2 .salide2{
+    width: 35%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+footer .fot2 .salide1 .image{
+    width: 60%;
+    margin-left: 20px;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+footer .fot2 .salide1 .image img{
+    height: 40%;
+    width: calc(80%/4);
+    object-fit: contain;
+}
+footer .fot2 .salide2 h4{
+    font-size: 16px;
+    font-family:sans-serif;
+    position: relative;
+}
+footer .fot2 .salide2 h4::before{
+    content: "";
+    width: 30%;
+    left: 0;
+    position: absolute;
+    bottom: -20px;
+    height: 1px;
+    z-index: 100000;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+footer .fot2 .salide2 .image{
+    width: 60%;
+    margin-left: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+footer .fot2 .salide2 .image img{
+    height: 100%;
+    width: 30%;
+    object-fit: contain;
+}
+footer .fot3{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:20% ;
+}
+
+
+
+
+
+
+
